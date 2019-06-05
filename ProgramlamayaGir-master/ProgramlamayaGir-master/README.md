@@ -1,0 +1,2 @@
+# ProgramlamayaGir
+C dili ödevi

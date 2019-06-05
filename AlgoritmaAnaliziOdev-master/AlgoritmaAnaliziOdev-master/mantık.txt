@@ -1,0 +1,56 @@
+for i 0 to N
+	for j 0 to i
+		for k j to n
+
+ilk önce 1 için 1 li dön 1
+sonra 2 için 1 li dön
+sonra 3 için 1 li dön
+sonra 4 için 1 li dön
+sonra 5 için 1 li dön
+
+sonra 1 için 2 li dön 1+2 1+3 1+4 1+5
+sonra 2 için 2 li dön 2+3 2+4 2+5
+sonra 3 için 2 li dön 3+4 3+5
+sonra 4 için 2 li dön 4+5
+sonra 1 için 3 lü dön 1+2+3 1+2+4 1+2+5
+sonra 2 için 3lü dön 2+3+4 2+3+5
+sonra 3 için 3lü dön 3+4+5
+sonra 4 için 3lü
+sonra 5 için 3lü
+sonra 1 için 4lü 1+2+3+4 1+2+3+5
+
+
+1
+2
+3
+4
+5
+
+1 2
+13
+14
+15
+23
+24
+25
+34
+35
+45
+123
+124
+125
+134
+135
+145
+234
+235
+245
+345
+4
+5
+1234
+1235
+
+for i 0 to n
+	
+	

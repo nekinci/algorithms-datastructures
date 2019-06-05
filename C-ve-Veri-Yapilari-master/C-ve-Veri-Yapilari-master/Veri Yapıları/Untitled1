@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+struct n{
+    int oncelik;
+    char data[5];
+    struct n *next;
+};
+typedef struct n node;
+node *a;
+node* enque(node *r,char data[5],int oncelik){
+    if(r==NULL){
+        r=(node*) malloc(sizeof(node));
+        r->oncelik=oncelik;
+        strcpy(r->data,data);
+        r->next=NULL;
+        return r;
+    }
+    node *iter=r;node *temp;
+    while(iter->next!=NULL&&iter->next->oncelik<oncelik)
+        iter=iter->next;
+    temp=iter->next;
+    iter->next=(node*) malloc(sizeof(node));
+    iter->next->oncelik=oncelik;
+    strcpy(iter->next->data,data);
+    iter->next->next=temp;
+    return r;
+}
+
+

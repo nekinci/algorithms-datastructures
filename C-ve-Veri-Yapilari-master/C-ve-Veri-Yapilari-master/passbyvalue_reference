@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+void fonk(int *a){
+	*a = 7;
+}
+
+void fonk1(int a){
+	a = 5;
+}
+
+int main(){
+	
+	int a = 5;
+	printf("fonkdan önce a : %d ", a);
+	fonk(&a);
+	printf("fonkdan sonra a : %d ", a);
+	fonk1(a);
+	printf("fonk1den sonra a (degismez cunku pass by value olarak geldi) : %d ", a);
+}

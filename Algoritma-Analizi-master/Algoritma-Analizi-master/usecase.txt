@@ -1,0 +1,43 @@
+--Baþarýlý Senaryo--
+Kullanýcý masaüstünden otomasyon programýný açar
+Kullanýcýyý Öðrenci ve Öðretmen giriþi seçeneði olan bir sayfa karþýlar
+Kullanýcý öðrenciyi seçer
+	-Öðrenci Login sayfasý gelir
+	-Öðrenciye öðrenci numarasý
+	-Otomasyon þifresi sorulur
+		-Öðrenci yanlýþ girerse yeniden sorulur
+	-Öðrenci doðru bilgileri girmiþtir
+	-Öðrenci login butonuna bastýktan sonra öðrenciyi iþlemleri yapabilmesi için bir sayfa karþýlar
+	-Bu sayfada duyurular Öðrenci Not bilgisi ve Devamsýzlýk bilgisini görüntülemesi için Menü karþýlar.
+	-Öðrenci not bilgisini görüntülemek ister
+	-Not bilgisini görüntüle butonuna bastýktan sonra açýlan panelde aldýðý dersler ve ilgili dersin notlarý ve ortalamasý gibi bazý bilgileri görür öðrencinin burada iþi bitmiþtir geriye çýkmak ister.
+	-Çýk butonuna bastýktan sonra tekrardan AnaMenüye döner, burada yine yapmak istediði devamsýzlýk bilgisini görüntülemeye basar ve çýkan ekranda dersler ve derslere ait devamsýzlýk ve kaldý mý kalmadý mý gibi bilgileri görüntüler
+	-Burada da iþi bitmiþtir çýkýþa basar ve duyurular paneline giriþ yapar duyurularý görüntüler.
+	-Programdan çýkýþ yapmak için çýkýþ yapa basarak çýkar.
+
+	--Öðretmen senaryosu
+	
+	-Öðretmen login sayfasý gelir
+	-Öðretmene kullanýcý adý ve þifre sorulur
+		-yanlýþ girdiðinde uyarý verir ve tekrardan sorar
+	-Öðretmen bilgileri doðru girmiþtir
+	-Öðretmen login butonuna bastýktan sonra öðretmeni iþlemleri yapabilmesi için bir sayfa karþýlar
+	-Öðretmen duyuru yapmak ister gelen menüden duyuru yap butonuna týklar ve gelen pencerede duyuru yapar
+	-Oradan çýkar not giriþi yapmak ister dersi alan öðrenciler listelenir ve öðretmen notlarý girer ve yüzde ayarlamalarýný yapar.
+	-Oradan  çýkar yine ayný þekilde devamsýzlýk bilgisini girer.
+
+	Senaryoda açýða çýkan bir konu;
+		Kullanýcý interface'i ve giriþYap () metodu olabilir
+		Sonra login view sayfasý için Kullanýcý öðrenciyse modelden gelen öðrenci bilgileri, deðilse öðretmen 		bilgileri olabilir
+		Ana menü yine ayný þekilde modelden gelen bilgilerle doldurulabilir ama iki Anamenü çoðunlukla birbirinden 			farklý olduðu için Ayrý düþünülebilir
+		Ders bilgileri var,Devamsýzlýk bilgileri var, Öðrenci listesi var, Duyuru listesi var
+		Öðretmen tek bir ders için; bir veya daha çok öðrenciye not verir.
+		Öðrenci tek bir ders için ; bir not görüntüler
+		Öðretmen duyuru yaptýðýnda tüm öðrencilere görünür.
+		Öðretmen tek bir ders için; bir veya daha fazla öðrenciye giriþ yapar
+		Öðrenci devamsýzlýk görüntülediðinde yalnýz bir öðrenci için bütün derslerin devamsýzlýðýný görür: 
+
+		Öðrenci Ders alýr Dersin devamsýzlýðý olur 
+		Öðretmen Ders verir dersin öðrenci listesi olur
+		<Array List> yapýsý çýkýyor karþýmýza.
+	-
